@@ -189,9 +189,9 @@ async function handleVerifyModal(interaction, client) {
   let device = 'Неизвестно';
   if (clientStatus) {
     const platforms = [];
-    if (clientStatus.desktop) platforms.push('PC');
-    if (clientStatus.mobile) platforms.push('Mobile');
-    if (clientStatus.web) platforms.push('Browser');
+    if (clientStatus.desktop) platforms.push('💻 PC');
+    if (clientStatus.mobile) platforms.push('📱 Mobile');
+    if (clientStatus.web) platforms.push('🌐 Browser');
     if (platforms.length > 0) device = platforms.join(', ');
   }
 
